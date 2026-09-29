@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | JM Algadepe</title>
+  <meta name="description" content="Personal portfolio of Your Name">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">JM Algadepe</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">&#9680;</button>
+        <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <h1 class="page-title">Skills</h1>
+      <p class="lead">Choose a category to see my skills and how comfortable I am using them.</p>
+      <div class="skill-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="frontend">Front-end</button>
+        <button class="tab-btn" data-tab="programming">Programming</button>
+        <button class="tab-btn" data-tab="workflow">Workflow</button>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card" data-cat="frontend">
+          <div class="ring" data-level="90"><span>0%</span></div>
+          <h3>HTML5</h3>
+          <p>Semantic page structure</p>
+        </article>
+        <article class="skill-card" data-cat="frontend">
+          <div class="ring" data-level="85"><span>0%</span></div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animations</p>
+        </article>
+        <article class="skill-card" data-cat="frontend">
+          <div class="ring" data-level="75"><span>0%</span></div>
+          <h3>JavaScript</h3>
+          <p>DOM and interactivity</p>
+        </article>
+        <article class="skill-card" data-cat="frontend">
+          <div class="ring" data-level="85"><span>0%</span></div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layouts</p>
+        </article>
+        <article class="skill-card" data-cat="programming">
+          <div class="ring" data-level="80"><span>0%</span></div>
+          <h3>Python</h3>
+          <p>Scripts and data tasks</p>
+        </article>
+        <article class="skill-card" data-cat="programming">
+          <div class="ring" data-level="70"><span>0%</span></div>
+          <h3>Data Analysis</h3>
+          <p>Survey and statistics work</p>
+        </article>
+        <article class="skill-card" data-cat="workflow">
+          <div class="ring" data-level="70"><span>0%</span></div>
+          <h3>Git & GitHub</h3>
+          <p>Version control and hosting</p>
+        </article>
+        <article class="skill-card" data-cat="workflow">
+          <div class="ring" data-level="80"><span>0%</span></div>
+          <h3>Problem Solving</h3>
+          <p>Debugging and planning</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 JM Algadepe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="to-top" class="to-top" aria-label="Scroll to top">&uarr;</button>
+</body>
+</html>

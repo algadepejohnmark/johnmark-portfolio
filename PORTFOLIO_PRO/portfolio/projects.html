@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | JM Algadepe</title>
+  <meta name="description" content="Personal portfolio of Your Name">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">JM Algadepe</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">&#9680;</button>
+        <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <h1 class="page-title">Projects</h1>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+      </div>
+      <div class="project-grid">
+        <article class="card project" data-category="web">
+          <img src="images/project1.jpg" alt="Screenshot of Personal Budget Tracker" class="project-img" width="400" height="240">
+          <div class="project-body">
+            <h3>Personal Budget Tracker</h3>
+            <p>A simple web app for logging income and expenses with a running balance.</p>
+            <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+          </div>
+        </article>
+        <article class="card project" data-category="data">
+          <img src="images/project2.jpg" alt="Screenshot of Survey Data Dashboard" class="project-img" width="400" height="240">
+          <div class="project-body">
+            <h3>Survey Data Dashboard</h3>
+            <p>Charts and summary tables built from survey results for a class research paper.</p>
+            <p class="tech"><strong>Tech:</strong> Python, Pandas, Matplotlib</p>
+          </div>
+        </article>
+        <article class="card project" data-category="python">
+          <img src="images/project3.jpg" alt="Screenshot of Student Records System" class="project-img" width="400" height="240">
+          <div class="project-body">
+            <h3>Student Records System</h3>
+            <p>A command-line program that adds, searches, and updates student records.</p>
+            <p class="tech"><strong>Tech:</strong> Python, SQLite</p>
+          </div>
+        </article>
+        <article class="card project" data-category="web">
+          <img src="images/project4.jpg" alt="Screenshot of Event Landing Page" class="project-img" width="400" height="240">
+          <div class="project-body">
+            <h3>Event Landing Page</h3>
+            <p>A responsive landing page for a school event with a schedule and sign-up form.</p>
+            <p class="tech"><strong>Tech:</strong> HTML, CSS, Flexbox</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="modal" id="modal" hidden>
+      <button class="modal-close" id="modal-close" aria-label="Close image">&times;</button>
+      <img id="modal-img" src="" alt="">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 JM Algadepe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="to-top" class="to-top" aria-label="Scroll to top">&uarr;</button>
+</body>
+</html>

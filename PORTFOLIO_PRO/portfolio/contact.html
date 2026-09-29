@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | JM Algadepe</title>
+  <meta name="description" content="Personal portfolio of Your Name">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">JM Algadepe</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">&#9680;</button>
+        <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <h1 class="page-title">Contact</h1>
+      <div class="two-col">
+        <div>
+          <p class="lead">Feel free to reach out about projects, questions, or opportunities.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:youremail@example.com">algadepejohnmark.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">github.com/algadepe_jm</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/algadepe_jm</a></li>
+          </ul>
+        </div>
+        <form id="contact-form" class="card" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <span class="error" id="name-error"></span>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <span class="error" id="email-error"></span>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <span class="error" id="message-error"></span>
+
+          <button type="submit" class="btn">Send Message</button>
+          <p class="success" id="form-success" hidden>Thank you! Your message has been sent.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 JM Algadepe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="to-top" class="to-top" aria-label="Scroll to top">&uarr;</button>
+</body>
+</html>
